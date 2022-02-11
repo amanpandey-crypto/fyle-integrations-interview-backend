@@ -12,7 +12,7 @@ class TeacherAssignmentSerializer(serializers.ModelSerializer):
         if "content" in attrs:
             raise serializers.ValidationError(
                 "Teacher cannot change the content of the assignment"
-            )
+            ) 
         if "student" in attrs:
             raise serializers.ValidationError(
                 "Teacher cannot change the student who submitted the assignment"
